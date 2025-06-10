@@ -1,0 +1,15 @@
+h3{
+    color: brown;
+}
+.myclass{
+    color: aqua;
+    background-color: black;
+}
+#myid{
+    color: brown;
+    background-color: antiquewhite;
+}
+p,h4{
+    color: black;
+    background-color: aqua;
+}
