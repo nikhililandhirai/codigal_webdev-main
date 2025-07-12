@@ -4,41 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>activity2</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/4.3.1/jquery.min.js"></script>
 
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 </head>
-<body>
-    <div class="container">
-        <h2>
-            contextual bagdes
-        </h2>
-        <span class="badge badge-primary">
-            primary
-        </span>
-        <span class="badge badge-secondary">
-            secondary
-        </span>
-        <span class="badge badge-success">
-            success
-        </span>
-        <span class="badge badge-danger">
-            danger
-        </span>
-        <span class="badge badge-warning">
-            warning
-        </span>
-        <span class="badge badge-info">
-            info 
-        </span>
-        <span class="badge badge-light">
-            light
-        </span>
-        <span class="badge badge-dark">
-            dark
-        </span>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle"
+                 data-toggle="vollapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                codingal
+            </a>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="#myNavbar">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="#section1">section1</a>
+                </li>
+                <li>
+                    <a href="section2">
+                        section2
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div id="section1" class="container-fluid">
+        <h1>
+            section1
+        </h1>
+        <h3>
+            codingal
+        </h3>
+        <h5>
+            codingal id on a mission
+        </h5>
+        <p> scroll this section</p>
+    </div>
+    <div id="section2" class="container-fluid">
+        <h1>
+            section2
+        </h1>
+        <h3>
+            codingal
+        </h3>
+        <h5>
+            vivek prakash and satyam
+        </h5>
+        <p>
+            scroll this section
+        </p>
+        
     </div>
 </body>
 </html>
