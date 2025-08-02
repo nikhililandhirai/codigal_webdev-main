@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity3</title>
+</head>
+<body>
+    <h2>
+        finding the maximum of three numbers
+    </h2>
+    <P id="result"></P>
+    <script>
+        function findmax(){
+            var i
+            var max=0
+            for(i=0;i<arguments.length;i++){
+                if(arguments[i]>max){
+                    max=arguments[i]
+                }
+            }
+            return max
+        }
+document.getElementById('result').innerHTML=findmax(10,20,30)
+    </script>
+</body>
+</html>
