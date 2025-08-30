@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>activity2</title>
+</head>
+<body>
+    <h2>
+        real time validation
+    </h2>
+    <form onsubmit="validate(event)">
+        <label>
+            email :
+        </label>
+        <input type="text" id="email">
+        <br>
+        <br>
+        <label>
+            password :
+        </label>
+        <input type="password" id="password">
+        <br>
+        <br>
+        <button type="submit">submit</button>
+    </form>
+    <p id="message">
+
+    </p>
+    <script>
+        function validate(event){
+            event.preventDefault()
+            var email=document.getElementById("email").value
+            var pass=document.getElementById("password").value
+            var message=document.getElementById("message")
+            let msg=""
+            if(email==""|| pass==""){
+                msg="email or password is not entered"
+                message.style.color="red"
+            }
+            else{
+                msg="login succesful"
+                message.style.color="green"
+            }
+            message.innerText=msg
+        }
+    </script>
+</body>
+</html>
